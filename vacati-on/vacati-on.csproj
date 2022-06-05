@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B80E8A5C-B5CA-4E65-A301-F3DA4D2B6A78}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>vacati_on</RootNamespace>
+    <AssemblyName>vacati-on</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutUs.Designer.cs">
+      <DependentUpon>frmAboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiscount.Designer.cs">
+      <DependentUpon>frmDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiscountUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiscountUpdater.Designer.cs">
+      <DependentUpon>frmDiscountUpdater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHolidayUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHolidayUpdater.Designer.cs">
+      <DependentUpon>frmHolidayUpdater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonitorHoliday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonitorHoliday.Designer.cs">
+      <DependentUpon>frmMonitorHoliday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonitorReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonitorReservation.Designer.cs">
+      <DependentUpon>frmMonitorReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonitorVacationer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonitorVacationer.Designer.cs">
+      <DependentUpon>frmMonitorVacationer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservationUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationUpdater.Designer.cs">
+      <DependentUpon>frmReservationUpdater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVacationer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVacationer.Designer.cs">
+      <DependentUpon>frmVacationer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHolidays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHolidays.Designer.cs">
+      <DependentUpon>frmHolidays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservation.Designer.cs">
+      <DependentUpon>frmReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVacationerUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVacationerUpdater.Designer.cs">
+      <DependentUpon>frmVacationerUpdater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAboutUs.resx">
+      <DependentUpon>frmAboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiscount.resx">
+      <DependentUpon>frmDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiscountUpdater.resx">
+      <DependentUpon>frmDiscountUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHolidayUpdater.resx">
+      <DependentUpon>frmHolidayUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonitorHoliday.resx">
+      <DependentUpon>frmMonitorHoliday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonitorReservation.resx">
+      <DependentUpon>frmMonitorReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonitorVacationer.resx">
+      <DependentUpon>frmMonitorVacationer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservationUpdater.resx">
+      <DependentUpon>frmReservationUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVacationer.resx">
+      <DependentUpon>frmVacationer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHolidays.resx">
+      <DependentUpon>frmHolidays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservation.resx">
+      <DependentUpon>frmReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVacationerUpdater.resx">
+      <DependentUpon>frmVacationerUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_2782.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbarCheckIn.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbarCheckOut.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbarReserve.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbarRoom.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStripButton10.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-information-clip-art-5aff14d9042d81.0094381815266664570171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox1.BackgroundImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\69-695417_discount-icon-png-png-download-discount-icon-vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pict--lcd-screen-1-computers-vector-stencils-library.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
