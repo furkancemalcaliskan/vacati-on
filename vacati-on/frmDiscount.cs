@@ -18,7 +18,7 @@ namespace vacati_on
             InitializeComponent();
         }
 
-        OleDbConnection DiscountConnection = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Furkan Çalışkan\\source\\repos\\vacati-on\\database\\vacati-on_db.accdb");
+        OleDbConnection DiscountConnection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\vacati-on_db.accdb");
         private void showInformation()
         {
             listView1.Items.Clear();
